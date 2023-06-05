@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>||Harshul||</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        .pic {
+            float: left;
+            margin-top: -50px;
+            width: 310px;
+            height: 310px;
+            margin-left: 180px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+            height: 1x50px;
+        }
+
+        .header {
+            padding: 20px 15px;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 99;
+        }
+
+
+        .header .logo a {
+            display: inline-block;
+            text-align: center;
+            line-height: 36px;
+            font-size: 24px;
+            height: 40px;
+            width: 40px;
+            color: var(--skin-color);
+            border-radius: 50%;
+            border: 2px solid var(--skin-color);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .text {
+            float: center;
+            margin-left: 550px;
+        }
+
+        h1 {
+            size: 20px;
+        }
+
+        #icon {
+            background-color: #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            padding-right: 20px;
+            justify-content: center;
+            align-items: center;
+            transition: transform 1s, box-shadow 0.5s;
+            box-shadow: 0 2px 3px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 24%);
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        #icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 3px 5px 5px rgb(0 0 0 / 12%), 0 3px 5px rgb(0 0 0 / 24%);
+        }
+
+        #icon-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .col {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+
+
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+            padding: 15px;
+        }
+
+        .card-exp {
+            border: #041E13;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 3px 5px 5px rgb(0 0 0 / 12%), 0 3px 5px rgb(0 0 0 / 24%);
+        }
+
+        @media screen and (max-width: 650px) {
+            .col {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        h1 {
+            display: inline-block;
+            position: relative;
+            color: #021e2c;
+            text-align: center;
+            /* font-family: initial; */
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+
+        h1:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #B8C097;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        h1:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .colum {
+            width: 16%;
+        }
+
+        .card-block {
+            width: 76px;
+        }
+
+        .card-body2 {
+            width: 70%;
+        }
+
+        .card3 {
+
+            width: 505px;
+        }
+
+        .try {
+            width: 33%;
+
+        }
+
+        .row2 {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: 207px;
+            margin-left: 186px;
+        }
+
+        #resume:hover {
+            background-color: #041E13;
+            text-emphasis-color: white;
+        }
+
+        .typing-demo {
+            width: 24ch;
+            animation: typing 5s steps(100), blink 0.5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            font-size: 2em;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .typing-demo {
+                font-size: 1.2em;
+            }
+        }
+
+        .intro {
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+
+        }
+
+        .nav-item {
+            display: inline-block;
+            position: relative;
+            color: black;
+            text-align: center;
+            /* font-family: initial; */
+            /* font-family: 'Courier New', Courier, monospace; */
+            font-weight: bold;
+        }
+
+        .nav-item:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #B8C097;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .nav-item:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .container1 {
+            max-width: 1140px;
+            margin: auto;
+            border-color: #041E13;
+        }
+        #icon-container {
+            list-style: none;
+        }
+        #doin {
+            margin-top: 5%;
+        }
+        #navbar {
+            color: #021e2c;
+        }
+        #color {
+            color: #021e2c;
+        }
+        .topnav  {
+            
+            color: #0c072c;
+            text-align: center;
+            padding: -18px 16px;
+            text-decoration: none;
+            font-size: 28px;
+        }
+        .topnav a:hover {
+            background-color: rgb(202, 187, 243);
+            color: rgb(120, 120, 120);
+        }
+    </style>
+</head>
+
+<body>
+    <section id="navbar">
+        <header id="color" >
+            <nav class="navbar navbar-expand-md fixed-top" style="color:#111415;">
+                <div class="container1">
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:rgb(28, 27, 27)"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse" style="color: black;">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="topnav nav-item">
+                                <a href="main.html">H</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#education" class="nav-link" style="color: rgb(8, 46, 62);">EDUCATION</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#skills" class="nav-link" style="color: rgb(8, 46, 62);">SKILLS</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#projects" class="nav-link" style="color: rgb(8, 46, 62);">PROJECTS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <section id="doin">
+        <div class="about-section">
+            <div>
+                <img src="harshul2.jpg" alt="Harshul" class="pic">
+            </div>
+            <div class="text intro ">
+                <h1>Hi, I am <strong style="font-size:40px">HARSHUL :)</strong></h1><br>
+                <p style="font-size: 25px; font-family:  Roboto">I'm a 3rd year undergraduate B.Tech student.
+                    I'm currently pursuing bachelor's of technology in computer science.
+                    I have a keen interest in web development and android development
+                    with good problem solving skills.
+                </p>
+                <p></p>
+                <a href="https://drive.google.com/file/d/1mNQroU6wX7grV9lFBZF6Dgy1oZYvkojD/view?usp=sharing" add
+                    target="_blank" style="font-size:large; color: rgb(255, 239, 239);">RESUME</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- education -->
+
+    <section id="education" style="margin-top: 3rem;">
+        <div class="container">
+            <div class="icon" style="display: inline-flex; padding: left 15vw; ">
+                <h2 style="text-align:center">EDUCATION </h2>
+                <img src="https://img.icons8.com/color/48/000000/book-and-pencil.png">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="border-radius: 4px; border-color: black;">
+                        <div class="card-body">
+                            <h5 class="card-title">Guru Tegh Bahadur Institute of Technology,GGSIPU</h5>
+                            <p class="card-text">2020-2024</p>
+                            <p class="card-text">Bachelor's Of Technology -- Electronics & Communication</p>
+                            <p class="card-text">CGPA : 9.131</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border-radius: 4px; border-color: black;">
+                        <div class="card-body">
+                            <h5 class="card-title">Lions Public School</h5>
+                            <p class="card-text">2018-2020</p>
+                            <p class="card-text">Senior Secodary Education</p>
+                            <p class="card-text">Non-Medical</p>
+                            <p class="card-text">Percentage : 89%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border-radius: 4px; border-color: black;">
+                        <div class="card-body">
+                            <h5 class="card-title">Lions Public School</h5>
+                            <p class="card-text">2005-2018</p>
+                            <p class="card-text">Secondary Education</p>
+                            <p class="card-text">Percentage : 89%</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div><br><br>
+
+        <!-- /*skilss*/ -->
+
+        <div class="container">
+            <div class="icon" style="display: inline-flex; padding: left 15vw; ">
+                <h2 style="float: left;">SKILLS</h2>
+                <img src="https://img.icons8.com/color/48/000000/parse-from-clipboard.png" />
+            </div>
+            <div class="row">
+                <div class="colum">
+                    <div class="card" id="even" style="width: 11rem; background-color: rgb(112, 179, 255);">
+                        <div class="card-body2">
+                            <div class="card-block">
+                                <img src="https://img.icons8.com/color/96/000000/java--v1.png" />
+                                <h6 class="card-subtitle">JAVA</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colum">
+                    <div class="card" id="even" style="width: 11rem; background-color: rgb(247, 162, 93);">
+                        <div class="card-body2">
+                            <div class="card-block">
+                                <img src="https://img.icons8.com/color/96/000000/html-5--v1.png" />
+                                <h6 class="card-subtitle">HTML</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colum">
+                    <div class="card" id="odd" style="width: 11rem; background-color: rgb(109, 143, 236);">
+                        <div class="card-body2">
+                            <div class="card-block">
+                                <img src="https://img.icons8.com/color/96/000000/css3.png" />
+                                <h6 class="card-subtitle">CSS</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colum">
+                    <div class="card" id="odd" style="width: 11rem; background-color: rgb(253, 253, 183);">
+                        <div class="card-body2">
+                            <div class="card-block">
+                                <img src="https://img.icons8.com/color/96/000000/javascript--v2.png" />
+                                <h6 class="card-subtitle">Javascript</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colum">
+                    <div class="card" id="odd" style="width: 11rem; background-color: rgb(203, 160, 252);">
+                        <div class="card-body2">
+                            <div class="card-block">
+                                <img src="https://img.icons8.com/color/96/000000/bootstrap.png" />
+                                <h6 class="card-subtitle">Bootstrap</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colum">
+                    <div class="card" id="odd" style="width: 11rem; background-color: rgb(224, 163, 248);">
+                        <div class="card-body2">
+                            <div class="card-block">
+                                <img src="https://img.icons8.com/color/96/000000/sql.png" />
+                                <h6 class="card-subtitle">MySQL</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <!-- /* Projects */ -->
+        <div class="container">
+            <div class="icon" style="display: inline-flex; padding: left 15vw; ">
+                <h2 style="float: left;">PROJECTS</h2>
+                <img src="https://img.icons8.com/color/48/000000/group-of-projects.png" />
+            </div>
+        </div>
+        <div class="row2">
+            <div class="try">
+                <div class="card" style="border:4px solid rgba(2, 61, 5, 0.986); ">
+                    <div class="card-body">
+                        <h5 class="card-title">GALLERY PROJECT</h5>
+                        <p class="card-text">
+                            A Responsive website for Photo Gallery which has various functionalities such as log in ,
+                            sign up.
+                            Along with it , has my profile and beautiful photos in my Gallery.
+                        </p>
+                        <p>
+                            Techstack Used: Html,Css,Bootstrap.
+                        </p>
+                        <a href="https://github.com/vanya-24/MsTeamsClone_MicrosoftEngage2021" class="card-link">
+                            <i class="fab fa-github fa-2x" style="text-align: center;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class=" try" style="float: right;">
+                <div class="card " style="border:4px solid rgba(2, 61, 5, 0.986); ">
+                    <div class="card-body">
+                        <h5 class="card-title">SHOPPING PROJECT</h5>
+                        <p class="card-text">
+                            A Responsive website for Shopping Clothes and other accessories which has various
+                            functionalities such as log in ,
+                            sign up, Add to cart.
+                        </p>
+                        <p>
+                            Techstack Used: Html,Css,Bootstrap.
+                        </p>
+                        <a href="https://github.com/vanya-24/MsTeamsClone_MicrosoftEngage2021" class="card-link">
+                            <i class="fab fa-github fa-2x" style="text-align: center;"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="try" style="float: right;">
+                <div class="card" style="border:4px solid rgba(2, 61, 5, 0.986); ">
+                    <div class="card-body">
+                        <h5 class="card-title">HALT THE FLOW</h5>
+                        <p class="card-text">
+                            A Responsive website for Shopping Menstrual products such as sanitary pads , cups etc.
+                            You can add to cart the products and check all the availability.
+                        </p>
+                        <p>
+                            Techstack Used: Html,Css,Bootstrap.
+                        </p>
+                        <a href="https://github.com/vanya-24/MsTeamsClone_MicrosoftEngage2021" class="card-link">
+                            <i class="fab fa-github fa-2x" style="text-align: center;"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top: 3rem;">
+        <footer id="contact">
+            <ul>
+                <div id="icon-container">
+                    <a href="https://github.com/harshul26">
+                        <div id="icon">
+                            <li><i class="fab fa-github"></i></li>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/harshul-narula-567b32205/">
+                        <div id="icon">
+                            <li><i class="fab fa-linkedin"></i></li>
+                        </div>
+                    </a>
+                    <a href="mailto:harshulnarula26@gmail.com">
+                        <div id="icon">
+                            <li><i class="far fa-envelope"></i></li>
+                        </div>
+                    </a>
+                </div></a>
+            </ul>
+            <p>&copy 2022, *Harshul*</p>
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <Style>
+        body,
+        html {
+            height: 100%;
+            background-color: rgb(255, 238, 218);
+        }
+
+        #header {
+            height: 70px;
+        }
+
+        #pic {
+            float: right;
+            margin-top: 8px;
+            margin-right: 90px;
+            margin-bottom: 20px;
+            align-items: flex-end;
+            border-radius: 60%;
+            border: 5px solid rgb(35, 49, 58);
+            height: 700px;
+            size: 4px;
+        }
+
+        .text {
+            float: right;
+        }
+
+        .icon {
+            float: left;
+            margin-top: 300px;
+            margin-left: -30px;
+        }
+
+        .icon li {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+
+        }
+
+        .text1 {
+            margin-top: 300px;
+            margin-left: 300px;
+            margin-right: 90px;
+
+            align-content: right;
+        }
+
+        .topnav {
+            
+            overflow: hidden;
+            height: 70px;
+            width: 80%;
+            margin-left: 190px;
+            text-decoration-color: black;
+            float: left;
+        }
+
+        .topnav a {
+            
+            color: #0c072c;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 45px;
+        }
+
+        #contact {
+            float: right;
+            overflow: hidden;
+            margin-top: -11px;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(202, 187, 243);
+            color: rgb(120, 120, 120);
+        }
+
+        a.btn1 {
+            padding-bottom: 10px 25px;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--skin-color);
+            background-color: transparent;
+            line-height: ;
+            cursor: pointer;
+            border-radius: 90px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-1::after {
+            border-radius: 30px;
+        }
+
+        .outer-shadow {
+            box-shadow: var(--outer-shadow);
+        }
+
+        .hover-in-shadow {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hover-in-shadow:hover {
+            box-shadow: var(--outer-shadow-0);
+        }
+
+
+        .hover-in-shadow:after {
+            content:icon;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .hover-in-shadow:hover:after {
+            box-shadow: var(--inner-shadow);
+        }
+
+        img {
+            vertical-align: middle;
+            max-width: 100%;
+        }
+
+        ul {
+            margin-right: 20px;
+        }
+
+        .logo a {
+            display: inline-block;
+            text-align: center;
+            line-height: 36px;
+            font-size: 24px;
+            height: 40px;
+            width: 40px;
+            color: var(--skin-color);
+            border-radius: 50%;
+            border: 2px solid var(--skin-color);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .fa_custom {
+            color:
+                #0099CC
+        }
+    </Style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="topnav">
+            <a href="main.html">H</a>
+            <a href="#contact" id="contact"> Contact</a>
+        </div>
+    </header>
+    <div>
+        <img src="harshul2.jpg" alt="my photo" id="pic">
+        <div class="text">
+            <div class="icon">
+                <ul>
+                    <li><a href="mailto:harshulnarula26@gmail.com"><i class="fa fa-envelope fa-3x"></i></a> </li>
+                    <li><a href="https://github.com/harshul26"><i class="fa fa-github fa-3x"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/harshul-narula-567b32205/"><i
+                                class="fa fa-linkedin-square fa_custom fa-3x"></i></a></li>
+                </ul>
+            </div>
+            <div class="text1">
+                <h1>Hi! I am HARSHUL</h1>
+                <p>Undergraduate</p><br>
+                <a href="https://drive.google.com/file/d/1mNQroU6wX7grV9lFBZF6Dgy1oZYvkojD/view?usp=sharing"
+                    class="btn1 outer-shadow hover-in-shadow ">Resume</a><br>
+                <a href="aboutme.html" class="btn1 outer-shadow hover-in-shadow ">More About Me</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
